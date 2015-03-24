@@ -20,7 +20,8 @@ end
  												email: "user@example.com",
  												password: "password", 
  												password_confirmation: "password" }
-end
+	end
 	assert_template 'users/show'
+	assert is_logged_in?
 	end
 end
